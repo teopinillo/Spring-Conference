@@ -1,8 +1,5 @@
 package com.teopinillo;
 
-import lombok.Data;
-
-@Data
 public class Speaker {
 	private String firstName;
 	private String lastName;
@@ -11,6 +8,11 @@ public class Speaker {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
+	}
+	
+	@Override
+	public String toString() {
+		return firstName + " " +lastName;		
 	}
 
 }
